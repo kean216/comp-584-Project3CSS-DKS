@@ -4,69 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planetary Database - CSS Grid</title>
- 
+    <title>Planetary Database - Grid Layout</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <div class="grid-container">
-        <header class="header">
+
+        <header class="header full-span">
             <h1>The Planetary Database</h1>
-            <p>Your guide to the Solar System and beyond</p>
+            <p>A Comprehensive Guide to our Solar System</p>
         </header>
 
-        <nav class="sidebar">
-            <ul>
-                <li><a href="#">The Sun</a></li>
-                <li><a href="#">Inner Terrestrial Planets</a></li>
-                <li><a href="#">Gas Giants</a></li>
-                <li><a href="#">Ice Giants</a></li>
-                <li><a href="#">Dwarf Planets</a></li>
-                <li><a href="#">Exoplanets</a></li>
-            </ul>
-        </nav>
-
-        <main class="content">
-            <h2>Featured: Mars, The Red Planet</h2>
-            
-            <img src="images/mars.jpg" alt="Picture of Mars" class="main-image">
-
-            <p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System. It carries the name of the Roman god of war and is often referred to as the "Red Planet" due to the effect of the iron oxide prevalent on its surface.</p>
-            
-            <div class="stats-board">
-                <div class="stat align-start">Moons: 2 (Phobos, Deimos)</div>
-                <div class="stat center-both">Gravity: 3.721 m/s²</div>
-                <div class="stat align-end">Day Length: 1d 0h 37m</div>
-            </div>
+        <aside class="r3-fact box">
+            <h3>Mars Fact</h3>
+            <p>Gravity is only 38% of Earth's.</p>
+            <p>Home to Olympus Mons, the tallest volcano in the solar system.</p>
+        </aside>
+        
+        <main class="r3-desc box">
+            <h2>Mars: The Red Planet</h2>
+            <p>Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars was—billions of years ago—wetter and warmer, with a thicker atmosphere. The rusty red color comes from iron oxide (rust) on its surface.</p>
+            <img src="images/mars.jpg" alt="Mars" class="planet-img">
         </main>
 
-        <aside class="gallery">
-            <div class="gallery-item tall">
-                <img src="images/jupiter.jpg" alt="Jupiter" class="gallery-image">
-                <span>Jupiter</span>
+        <section class="r4-feature box full-span">
+            <h2>Featured Giant: Jupiter</h2>
+            <img src="images/jupiter.jpg" alt="Jupiter" class="planet-img large-img">
+            <p>Jupiter is the largest planet in our solar system—more than twice as massive as all the other planets combined. Its iconic Great Red Spot is a giant storm bigger than Earth that has raged for hundreds of years.</p>
+        </section>
+
+        <div class="r5-stat-left box stat-box">
+            <h3>Saturn's Rings</h3>
+            <p>Made of billions of chunks of ice and rock.</p>
+        </div>
+
+        <div class="r5-stat-main box">
+            <h2>Saturn: The Jewel</h2>
+            <img src="images/saturn.jpg" alt="Saturn" class="planet-img small-img">
+            <p>Adorned with a dazzling system of icy rings, Saturn is unique. It is a massive ball made mostly of hydrogen and helium.</p>
+        </div>
+
+        <div class="r5-stat-right box stat-box">
+            <h3>Saturn's Moons</h3>
+            <p>Has 146 recognized moons, the most in the solar system.</p>
+        </div>
+
+        <section class="r6-gallery full-span">
+            <div class="gallery-card">
+                <img src="images/mercury.jpg" alt="Mercury">
+                <p>Mercury</p>
             </div>
-            <div class="gallery-item">
-                <img src="images/Venus.jpg" alt="Venus" class="gallery-image">
-                <span>Venus</span>
+            <div class="gallery-card">
+                <img src="images/venus.jpg" alt="Venus">
+                <p>Venus</p>
             </div>
-            <div class="gallery-item wide">
-                <img src="images/saturn.jpg" alt="Saturn's Rings" class="gallery-image">
-                <span>Saturn</span>
+            <div class="gallery-card">
+                <img src="images/neptune.jpg" alt="Neptune">
+                <p>Neptune</p>
             </div>
-            <div class="gallery-item">
-                <img src="images/mercury.jpg" alt="Mercury" class="gallery-image">
-                <span>Mercury</span>
+            <div class="gallery-card">
+                <img src="images/uranus.jpg" alt="Uranus">
+                <p>Uranus</p>
             </div>
-            <div class="gallery-item">
-                <img src="images/uranus.jpg" alt="Uranus" class="gallery-image">
-                <span>Uranus</span>
+            <div class="gallery-card">
+                <img src="images/mars.jpg" alt="Mars">
+                <p>Mars</p>
             </div>
+        </section>
+
+        <div class="r7-half box">
+            <h2>Venus: Earth's Twin</h2>
+            <img src="images/venus.jpg" alt="Venus" class="planet-img small-img">
+            <p>Venus is the hottest planet in our solar system. Its thick atmosphere traps heat in a runaway greenhouse effect, making it glow like a beacon in our night sky.</p>
+        </div>
+
+        <div class="r7-half box">
+            <h2>Mercury: The Swift Planet</h2>
+            <img src="images/mercury.jpg" alt="Mercury" class="planet-img small-img">
+            <p>Mercury is the smallest planet and closest to the Sun. It has a barren, rocky surface covered with craters, looking very much like Earth's Moon.</p>
+        </div>
+
+        <section class="r8-feature box full-span">
+            <h2>Neptune: The Windy World</h2>
+            <img src="images/neptune.jpg" alt="Neptune" class="planet-img large-img">
+            <p>Dark, cold, and whipped by supersonic winds, ice giant Neptune is the most distant planet in our solar system. It is the only planet not visible to the naked eye.</p>
+        </section>
+
+        <main class="r9-desc box">
+            <h2>Uranus: The Sideways Planet</h2>
+            <p>Uranus rotates at a nearly 90-degree angle from the plane of its orbit. This makes it appear to spin on its side like a rolling barrel, likely due to a massive ancient collision.</p>
+            <img src="images/uranus.jpg" alt="Uranus" class="planet-img">
+        </main>
+
+        <aside class="r9-fact box stat-box">
+            <h3>Uranus Fact</h3>
+            <p>Uranus has 27 known moons named after Shakespearean characters.</p>
         </aside>
 
-        <footer class="footer">
+        <footer class="footer full-span">
             <p>&copy; 2026 The Planetary Database.</p>
         </footer>
+
     </div>
 
 </body>
